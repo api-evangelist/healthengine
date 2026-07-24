@@ -1,0 +1,21 @@
+generated: '2026-07-24'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: healthengine.com.au
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Mar 13 23:59:59 2027 GMT
+  hsts: null
+- host: practices.healthengine.com.au
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Feb 16 23:59:59 2027 GMT
+  hsts: false
+domains:
+- domain: healthengine.com.au
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

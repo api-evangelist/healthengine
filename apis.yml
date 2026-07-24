@@ -51,6 +51,10 @@ modified: '2026-07-24'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: VulnerabilityDisclosure
+  url: security/healthengine-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/healthengine-domain-security.yml
 - type: Website
   url: https://healthengine.com.au/
 - type: About
@@ -67,6 +71,12 @@ common:
   url: https://healthengine.com.au/privacy
 - type: TermsOfService
   url: https://healthengine.com.au/terms
+- type: SecurityTxt
+  url: well-known/healthengine-security.txt
+- type: WellKnown
+  url: well-known/healthengine-well-known.yml
+- type: Security
+  url: security/healthengine-vulnerability-disclosure.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
