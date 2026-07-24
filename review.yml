@@ -1,0 +1,161 @@
+aid: healthengine
+name: HealthEngine
+review:
+  question: Does HealthEngine expose a public developer portal, REST OpenAPI, or HL7 FHIR API?
+  answer: false
+  date: '2026-07-24'
+  reviewer: API Evangelist
+  homeMarket: Australia
+findings:
+  summary: |
+    HealthEngine does not publish a public, self-serve developer program. It is
+    Australia's largest consumer healthcare marketplace and patient-engagement
+    platform (founded 2006, Perth, WA): a consumer booking app/website plus a
+    practice SaaS suite (GP Complete, Patient Connect, Online Booking,
+    Appointment Reminders, Featured Listings, payments, reviews, Scripts,
+    telehealth). Its "API" surface is a set of private, partner-only real-time
+    integrations INTO 25+ third-party Australian practice management systems -
+    it consumes/synchronises with those PMS platforms rather than exposing a
+    documented outbound developer API. No developer portal, no downloadable
+    OpenAPI/Swagger, no HL7 FHIR CapabilityStatement, and no SMART-on-FHIR or
+    OpenID Connect discovery document were found. This is an honest identity
+    stub with no machine-readable contract to harvest.
+  developerPortal:
+    found: false
+    probed:
+      - url: https://developer.healthengine.com.au
+        status: 404
+      - url: https://developer.healthengine.com
+        status: 000
+      - url: https://docs.healthengine.com.au
+        status: 000
+      - url: https://healthengine.com.au/developers
+        status: 404
+      - url: https://healthengine.com.au/developer
+        status: 404
+      - url: https://practices.healthengine.com.au/developers
+        status: 404
+      - url: https://developer.practices.healthengine.com.au
+        status: 200
+        note: >-
+          Returns HTTP 200 but is a wildcard-DNS catch-all serving the same
+          "Healthengine for practices" marketing site (confirmed - a random
+          nonsense subdomain also resolves 200 to identical content). Not a
+          real developer portal.
+  fhirCapabilityStatement:
+    found: false
+    fhirVersion: null
+    resources: []
+    probed:
+      - url: https://api.healthengine.com.au/fhir/metadata
+        status: 404
+      - url: https://fhir.healthengine.com.au/metadata
+        status: 404
+      - url: https://api.healthengine.com.au/.well-known/smart-configuration
+        status: 404
+      - url: https://healthengine.com.au/.well-known/smart-configuration
+        status: 404
+      - url: https://healthengine.com.au/.well-known/openid-configuration
+        status: 404
+  downloadableSpecs:
+    found: false
+    count: 0
+    probed:
+      - url: https://healthengine.com.au/openapi.json
+        status: 404
+      - url: https://healthengine.com.au/swagger.json
+        status: 404
+    note: >-
+      robots.txt disallows /api/ and /json/ - these are internal application
+      endpoints powering the booking widgets, not a documented public API.
+  authModel:
+    scheme: none-public
+    smartOnFhir: false
+    oauthScopes: []
+    note: >-
+      No anonymous SMART-on-FHIR, OpenID Connect, or OAuth discovery document is
+      served. Partner PMS integrations are provisioned privately under
+      commercial agreement; no public auth model is documented.
+  standardsConformance:
+    usCore: false
+    ukCore: false
+    auCore: false
+    daVinci: false
+    carin: false
+    note: >-
+      No FHIR implementation guide conformance is claimed publicly. HealthEngine
+      operates in the Australian market alongside ADHA My Health Record and the
+      AU Core / AU Base FHIR ecosystem, but exposes no conformant public FHIR
+      surface of its own as of the review date.
+  access:
+    model: gated
+    selfServe: false
+    note: >-
+      Integration is partner/PMS-only under commercial agreement. Practices
+      connect via HealthEngine's existing PMS integrations (Best Practice / Bp
+      Premier, MedicalDirector Pracsoft, Zedmed, Cliniko, Genie, Gentu, Medtech,
+      Nookal, PracSuite, Dental4Windows and 15+ others), not via a public
+      developer signup.
+  integratedPmsPartners:
+    - Best Practice / Bp Premier
+    - MedicalDirector Pracsoft
+    - Zedmed
+    - Cliniko
+    - CorePlus
+    - CorePractice
+    - Dental4Web (D4W)
+    - Dental4Windows (D4W)
+    - Dentally
+    - EXACT
+    - Genie
+    - Gentu
+    - Helix
+    - Medtech
+    - Nookal
+    - OASIS
+    - PracSuite
+    - Praktika
+    - Software of Excellence (SOE)
+    - Sunix
+    - Xestro
+  transports:
+    - protocol: REST
+      scheme: https
+      note: Internal application/JSON endpoints power the consumer booking site and widgets; disallowed in robots.txt and undocumented. Not a public API.
+      documented: false
+    - protocol: FHIR
+      scheme: https
+      documented: false
+      note: No FHIR base URL, metadata CapabilityStatement, or SMART configuration is served.
+    - protocol: OpenAPI
+      scheme: https
+      documented: false
+      note: No downloadable OpenAPI/Swagger definition found on the site, docs host, or any api subdomain.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented.
+sources:
+  - url: https://about.healthengine.com.au/
+    type: About
+    note: Company mission, consumer app, and practice products; 1000s of providers and millions of monthly patients.
+  - url: https://practices.healthengine.com.au/
+    type: Portal
+    note: Practice-facing SaaS site (GP Complete, Patient Connect, Online Booking, etc.).
+  - url: https://practices.healthengine.com.au/integrations/
+    type: Documentation
+    note: Lists 25+ integrated practice management systems; no developer API, FHIR, or partner API program mentioned.
+  - url: https://healthengine.com.au/robots.txt
+    type: Documentation
+    note: Disallows /api/ and /json/ (internal booking endpoints); no public API docs referenced.
+actions:
+  apisYmlUpdated: true
+  status: built-stub
+  reason: >-
+    No public developer portal, OpenAPI/Swagger, or HL7 FHIR CapabilityStatement
+    exists to harvest. apis.yml captures verified identity and confirmed public
+    web properties only; apis[] is empty because no self-serve documented API is
+    published. Home market Australia.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

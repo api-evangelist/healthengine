@@ -1,0 +1,72 @@
+aid: healthengine
+url: https://raw.githubusercontent.com/api-evangelist/healthengine/refs/heads/main/apis.yml
+name: HealthEngine
+kind: company
+description: >-
+  HealthEngine is Australia's largest consumer healthcare marketplace and
+  patient-engagement platform, founded in 2006 and headquartered in Perth,
+  Western Australia. Its consumer app and website let millions of Australians
+  search a national directory of primary-care providers and book, manage, and
+  attend appointments (including telehealth) across GP, dental, allied-health,
+  and specialist practices. For practices, HealthEngine sells a SaaS suite -
+  GP Complete, Patient Connect, Online Booking, Appointment Reminders and
+  Recalls, Featured Listings, online payments, patient reviews, and Scripts -
+  that plugs into the practice's existing software. It maintains private,
+  real-time integrations into 25+ Australian practice management systems
+  (Best Practice / Bp Premier, MedicalDirector Pracsoft, Zedmed, Cliniko,
+  Genie, Gentu, Medtech, Nookal, PracSuite, Dental4Windows, and others) so
+  appointment availability and bookings sync directly with the front desk.
+  Home market is Australia. HealthEngine does NOT publish a public developer
+  portal, REST OpenAPI, or HL7 FHIR endpoint - its API surface is a set of
+  gated, partner-only PMS integrations rather than a self-serve developer
+  program, so this profile is an honest identity stub with no public
+  machine-readable contract to harvest.
+accessModel:
+  pricing: unknown
+  onboarding: partner
+  trial: false
+  try_now: false
+  public: false
+  label: Partner-only PMS integrations · no public developer API
+  confidence: high
+  source:
+  - review
+  generated: '2026-07-24'
+  method: manual
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Company
+- Healthcare
+- Australia
+- Patient Engagement
+- Appointment Booking
+- Scheduling
+- Telehealth
+- Practice Management
+- Digital Health
+- Healthcare Marketplace
+- Interoperability
+created: '2026-07-24'
+modified: '2026-07-24'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://healthengine.com.au/
+- type: About
+  url: https://about.healthengine.com.au/
+- type: Portal
+  url: https://practices.healthengine.com.au/
+- type: Integrations
+  url: https://practices.healthengine.com.au/integrations/
+- type: Blog
+  url: https://practices.healthengine.com.au/blog/
+- type: LinkedIn
+  url: https://au.linkedin.com/company/healthengine
+- type: PrivacyPolicy
+  url: https://healthengine.com.au/privacy
+- type: TermsOfService
+  url: https://healthengine.com.au/terms
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
