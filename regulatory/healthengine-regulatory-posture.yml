@@ -1,0 +1,124 @@
+generated: '2026-10-21'
+method: searched
+probe: true
+source: https://healthengine.com.au/privacy
+jurisdiction_note: >-
+  Australian provider; the Privacy Policy is framed around the Privacy Act and the Australian Privacy
+  Principles (APPs). No GDPR/CCPA-specific rights section was found on the pages read. The Terms of Use
+  (https://healthengine.com.au/terms, 200) were also read and speak to none of the signals below.
+signals:
+  data_subject_request:
+    url: https://healthengine.com.au/privacy
+    section: 'Access to, deletion of and correction of your personal information'
+    rights_named: [access, deletion or de-identification, correction]
+    evidence:
+    - source: https://healthengine.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        You have a right to request: access to your personal information; that your personal information
+        be deleted or de-identified; or that we correct inaccuracies relating to your information.
+    - source: https://healthengine.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Where these reasons to refuse a request in respect of your personal information exist, we will
+        advise you of those reasons at the time you make your request.
+    note: >-
+      Establishes access, deletion/de-identification and correction rights, with a stated qualification that
+      requests may be refused (e.g. legal retention) and reasons given. No response SLA or portability right is stated.
+  subprocessors:
+    url: https://healthengine.com.au/privacy
+    section: 'Service providers'
+    named: [Intercom Inc, OpenAI, Avoma Inc., Braze Inc., Cloudstaff Pty Ltd, Alchemer, Google, Adobe Analytics]
+    evidence:
+    - source: https://healthengine.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Healthengine may disclose your personal information to service providers, including software service providers.
+    - source: https://healthengine.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        our provider of AI chatbot software, Intercom Inc; providers of artificial intelligence platforms that
+        enable users to access certain Healthengine services through those platforms, such as OpenAI, the
+        operator of the ChatGPT application;
+    note: >-
+      The policy names individual service providers inline in its disclosure section rather than publishing a
+      separate, versioned subprocessor list; there is no stated change-notification mechanism.
+  data_residency:
+    url: https://healthengine.com.au/privacy
+    section: 'Overseas disclosures'
+    locations_named: [Australia, United States, European Union, Singapore, Philippines]
+    evidence:
+    - source: https://healthengine.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Some third party service providers used by Healthengine may store your personal information on servers
+        located overseas, including the US and European Union. However, they must also meet our requirements
+        for privacy and data security.
+    - source: https://healthengine.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Braze’s primary data hosting and processing infrastructure is located in the United States, and personal
+        information may be transferred to or stored in the United States in accordance with applicable data protection laws.
+    - source: https://healthengine.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Healthengine has engaged Cloudstaff Pty Ltd, a third party staffing provider based in the Philippines, to
+        provide technical and customer support services, including monitoring and responding to live chat enquiries
+        through the Healthengine Network.
+    note: >-
+      A disclosure of offshore storage/access locations, not a residency commitment: data may leave Australia
+      (US, EU, Singapore, Philippines). No customer-selectable data region is offered.
+  ai_transparency:
+    url: https://healthengine.com.au/privacy
+    section: 'When you access Healthengine services through third party AI platforms'
+    evidence:
+    - source: https://healthengine.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        an AI virtual receptionist to assist health professionals with managing incoming phone calls, appointment
+        scheduling, and patient enquiries using automated voice and AI technologies;
+    - source: https://healthengine.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        If you access Healthengine functionality through one of these platforms, personal information you submit in
+        prompts, queries or messages may be transmitted to Healthengine through the platform in order for us to respond
+        to your request or provide the relevant service.
+    - source: https://healthengine.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Healthengine may disclose limited personal information to third party service providers located outside of
+        Australia in connection with the operation and functionality of its AI Virtual Receptionist and AI assisted
+        electronic communications products.
+    note: >-
+      The privacy policy discloses AI-driven products (AI virtual receptionist, AI chatbot, ChatGPT app integration),
+      that recordings/transcripts of AI receptionist interactions are collected, and that AI-related data may be
+      processed offshore. It is a privacy disclosure, not a standalone AI transparency statement or model card.
+  data_retention:
+    url: https://healthengine.com.au/privacy
+    evidence:
+    - source: https://healthengine.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We will only retain your personal information for as long as reasonably necessary to fulfil the purposes we
+        collected it for, including for the purposes of satisfying any legal, regulatory, tax, accounting or reporting
+        requirements.
+    - source: https://healthengine.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        To determine the appropriate retention period for personal information, we consider the amount, nature and
+        sensitivity of the personal information, the potential risk of harm from unauthorised use or disclosure of your
+        personal information,
+    note: >-
+      A purpose-limited retention principle with the criteria used to set periods; no fixed retention periods are published.

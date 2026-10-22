@@ -1,0 +1,8 @@
+generated: '2026-10-21'
+method: none
+packages: []
+checked:
+- https://registry.npmjs.org/-/v1/search?text=healthengine (no HealthEngine-published packages)
+- https://pypi.org/pypi/healthengine/json (404)
+- https://github.com/HealthEngine (2 repos, vm and geocoder_ruby, neither an API client)
+note: No first-party SDK or client library found; HealthEngine has no public API.

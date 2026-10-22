@@ -1,0 +1,172 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 14
+  own: 12
+  other_domain: 1
+  platform: 1
+  roles:
+  - api
+  - marketing
+  - other
+  - support
+  - website
+hosts:
+- host: about.healthengine.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - About
+  serves: []
+  registrable_domain: healthengine.com.au
+  role: marketing
+  relation: own
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: au.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: blog.healthengine.com.au
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: healthengine.com.au
+  role: marketing
+  relation: own
+- host: careers.healthengine.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - Careers
+  serves: []
+  registrable_domain: healthengine.com.au
+  role: marketing
+  relation: own
+- host: healthengine.com.au
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Newsroom
+  - PrivacyPolicy
+  - TermsOfService
+  serves: []
+  registrable_domain: healthengine.com.au
+  role: website
+  relation: own
+- host: healthinfo.healthengine.com.au
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: healthengine.com.au
+  role: other
+  relation: own
+- host: listyourpractice.healthengine.com.au
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: healthengine.com.au
+  role: other
+  relation: own
+- host: partnerservices.healthengine.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - Partners
+  serves: []
+  registrable_domain: healthengine.com.au
+  role: other
+  relation: own
+- host: practices.healthengine.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Portal
+  - Integrations
+  - Blog
+  serves: []
+  registrable_domain: healthengine.com.au
+  role: marketing
+  relation: own
+- host: privacy.healthengine.com.au
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: healthengine.com.au
+  role: other
+  relation: own
+- host: support.healthengine.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - vendor-detect
+  types:
+  - Support
+  serves:
+  - hosting
+  vendor: hubspot
+  registrable_domain: healthengine.com.au
+  role: support
+  relation: own
+- host: terry.healthengine.com.au
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: healthengine.com.au
+  role: other
+  relation: own
+- host: vouchers.healthengine.com.au
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: healthengine.com.au
+  role: other
+  relation: own

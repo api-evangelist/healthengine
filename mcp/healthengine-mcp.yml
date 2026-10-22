@@ -1,0 +1,20 @@
+name: HealthEngine MCP server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+source: https://healthengine.com.au/.well-known/mcp.json
+status: none
+description: >-
+  No official HealthEngine MCP server was found. A web search for a HealthEngine
+  MCP server returned only generic Model Context Protocol material; GET
+  https://healthengine.com.au/.well-known/mcp.json, https://practices.healthengine.com.au/.well-known/mcp.json
+  and https://about.healthengine.com.au/.well-known/mcp.json each returned HTTP 404
+  (2026-10-21), and the pre-flight contract discovery recorded mcp: absent on all
+  probed HealthEngine hosts. No candidate tool list is derived because HealthEngine
+  publishes no OpenAPI contract: its API surface is gated, partner-only practice
+  management system integrations.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []

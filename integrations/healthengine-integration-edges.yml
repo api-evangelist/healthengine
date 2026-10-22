@@ -1,0 +1,213 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://practices.healthengine.com.au/integrations/
+- https://zapier.com/apps/healthengine/integrations
+- https://n8n.io/integrations/healthengine/
+- https://composio.dev/toolkits/healthengine
+- https://monid.ai/tools/healthengine
+checked:
+- https://practices.healthengine.com.au/integrations/
+- https://zapier.com/apps/healthengine/integrations (404)
+- https://www.make.com/en/integrations/healthengine (403)
+- https://n8n.io/integrations/healthengine/ (404)
+- https://composio.dev/toolkits/healthengine
+- https://monid.ai/tools/healthengine
+- https://n8n.io/integrations/healthengine/
+- https://zapier.com/apps/healthengine/integrations
+summary: Healthengine's practices integrations page ('Seamlessly Connecting with 25+ Practice Management Systems')
+  names 21 practice management systems it integrates with. These are private, provider-operated PMS integrations;
+  no public API, contract or marketplace listing exists. Pracsoft is listed by name without a partner link.
+marketplace_apps: []
+edges:
+- partner_name: Best Practice
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (GP)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://bestpracticesoftware.com/
+- partner_name: Cliniko
+  partner: cliniko
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Allied)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.cliniko.com/
+  partner_match: domain
+- partner_name: CorePlus
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Allied)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.corepluspm.com/
+- partner_name: CorePractice
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Dental)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.corepractice.com.au/
+- partner_name: Dental4Web (D4W)
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Dental)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://centaursoftware.com.au/solutions/dental-practice-management/dental4web/
+- partner_name: Dental 4 Windows (D4W)
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Dental)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://centaursoftware.com.au/solutions/dental-practice-management/dental4windows/
+- partner_name: Dentally
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Dental)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.dentally.com/en-au/
+- partner_name: EXACT
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Dental)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.exactdental.com.au/
+- partner_name: Genie
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (GP)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.magentus.com/practice-management/genie/?r=a
+- partner_name: Gentu
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Specialist)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.magentus.com/practice-management/gentu/?r=a
+- partner_name: Helix
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Telehealth)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.medicaldirector.com/products/helix
+- partner_name: Medtech
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (GP)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://medtechglobal.com/au/
+- partner_name: NOOKAL
+  partner: nookal
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Allied)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.nookal.com/au
+  partner_match: domain
+- partner_name: OASIS
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Dental)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.duettocloud.com/en-us/partners/integrations/oasis
+- partner_name: Pracsoft
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (GP)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+- partner_name: PracSuite
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Allied)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.pracsuite.com/
+- partner_name: Praktika
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Dental)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://praktika.com.au/
+- partner_name: SOE (Software of Excellence)
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Dental)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.softwareofexcellence.com/en-gb/
+- partner_name: Sunix
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Allied)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.sunixvision.com.au/
+- partner_name: Xestro
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Allied)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://xestro.com/
+- partner_name: Zedmed
+  partner: null
+  type: claimed
+  evidence: https://practices.healthengine.com.au/integrations/
+  direction: unknown
+  category: Practice Management System (Specialist)
+  relationship: workflow
+  use_case: Appointment availability and bookings sync between Healthengine and the practice management system
+  partner_url: https://www.zedmed.com.au/
+templates: []

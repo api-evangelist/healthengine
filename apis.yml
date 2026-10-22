@@ -1,7 +1,11 @@
 aid: healthengine
+
 url: https://raw.githubusercontent.com/api-evangelist/healthengine/refs/heads/main/apis.yml
+
 name: HealthEngine
+
 kind: company
+
 description: >-
   HealthEngine is Australia's largest consumer healthcare marketplace and
   patient-engagement platform, founded in 2006 and headquartered in Perth,
@@ -21,6 +25,7 @@ description: >-
   gated, partner-only PMS integrations rather than a self-serve developer
   program, so this profile is an honest identity stub with no public
   machine-readable contract to harvest.
+
 deliveryModel:
   model: saas
   open_source: false
@@ -32,6 +37,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: partner
@@ -44,7 +50,9 @@ accessModel:
   - review
   generated: '2026-07-24'
   method: manual
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+
+image: https://practices.healthengine.com.au/wp-content/uploads/Hero-Desktop.png
+
 tags:
 - Company
 - Healthcare
@@ -57,11 +65,24 @@ tags:
 - Digital Health
 - Healthcare Marketplace
 - Interoperability
+
 created: '2026-07-24'
-modified: '2026-07-24'
+
+modified: '2026-10-21'
+
 specificationVersion: '0.23'
-apis: []
+
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+
 common:
+- type: Hosts
+  url: hosts/healthengine-hosts.yml
+- type: IntegrationEdges
+  url: integrations/healthengine-integration-edges.yml
+- type: Vendors
+  url: vendors/healthengine-vendors.yml
 - type: VulnerabilityDisclosure
   url: security/healthengine-vulnerability-disclosure.yml
 - type: DomainSecurity
@@ -76,6 +97,14 @@ common:
   url: https://practices.healthengine.com.au/integrations/
 - type: Blog
   url: https://practices.healthengine.com.au/blog/
+- type: Support
+  url: https://support.healthengine.com.au/en-au/help-centre-practice
+- type: Newsroom
+  url: https://healthengine.com.au/press/
+- type: Careers
+  url: https://careers.healthengine.com.au/
+- type: Partners
+  url: https://partnerservices.healthengine.com.au/
 - type: LinkedIn
   url: https://au.linkedin.com/company/healthengine
 - type: PrivacyPolicy
@@ -88,6 +117,31 @@ common:
   url: well-known/healthengine-well-known.yml
 - type: Security
   url: security/healthengine-vulnerability-disclosure.yml
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website healthengine.com.au verified (title 'Healthengine | Find and book healthcare providers'); all common[] web pointers fetched 2026-10-21 and returned 200. No public developer portal, API reference, pricing page, status page or verifiable GitHub org (github.com/healthengine has no website/description linking it to the company) found.
+  evidence:
+  - {url: 'https://healthengine.com.au/', status: 200}
+  - {url: 'https://about.healthengine.com.au/', status: 200}
+  - {url: 'https://practices.healthengine.com.au/', status: 200}
+  - {url: 'https://practices.healthengine.com.au/integrations/', status: 200}
+  - {url: 'https://practices.healthengine.com.au/blog/', status: 200}
+  - {url: 'https://healthengine.com.au/privacy', status: 200}
+  - {url: 'https://healthengine.com.au/terms', status: 200}
+  - {url: 'https://healthengine.com.au/press/', status: 200}
+  - {url: 'https://support.healthengine.com.au/en-au/help-centre-practice', status: 200}
+  - {url: 'https://careers.healthengine.com.au/', status: 200}
+  - {url: 'https://partnerservices.healthengine.com.au/', status: 200}
+  - {url: 'https://au.linkedin.com/company/healthengine', status: 200}
+  - {url: 'https://practices.healthengine.com.au/pricing/', status: 404}
+  - {url: 'https://blog.healthengine.com.au/', status: 404}
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 17
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

@@ -1,0 +1,6 @@
+name: HealthEngine rate limits
+generated: '2026-10-21'
+method: none
+limit_count: 0
+limits: []
+note: HealthEngine publishes no developer documentation or public API (its integrations are private, partner-only practice-management-system connections), so no rate limits are documented anywhere.

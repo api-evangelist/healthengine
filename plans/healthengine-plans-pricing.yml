@@ -1,0 +1,12 @@
+name: HealthEngine pricing
+generated: '2026-10-21'
+method: none
+source: https://practices.healthengine.com.au/
+audience: unclear
+pricing_basis: none
+published: false
+delivery:
+  model: managed
+plan_count: 0
+plans: []
+note: No pricing page is published. practices.healthengine.com.au and its /integrations/ page carry no prices (only "Book demo" / "Get in touch" calls to action), and https://practices.healthengine.com.au/pricing/ returned 404. There is no public developer API to price.
